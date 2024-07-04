@@ -31,7 +31,7 @@ const parseToHtml = (ssmlContent: string) => {
   return result;
 }
 
-// treeの中身を確認して<p>タグの中に<strong>が入っていたらエラーを返す関数
+// treeの中身を確認して<strong>タグの中に他のタグが入っていたらエラーメッセージを返す関数
 const checkTree = (tree: Document) => {
 /**
  *  https://developer.mozilla.org/ja/docs/Web/API/Document/querySelectorAll
